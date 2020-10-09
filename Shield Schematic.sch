@@ -4997,85 +4997,6 @@ Source: http://cache.national.com/ds/LM/LM386.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="mylibrary">
-<packages>
-<package name="TO220" urn="urn:adsk.eagle:footprint:28453/1">
-<description>&lt;b&gt;TO 220 horizontal&lt;/b&gt;</description>
-<wire x1="-5.207" y1="-1.27" x2="5.207" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="5.207" y1="14.605" x2="-5.207" y2="14.605" width="0.127" layer="21"/>
-<wire x1="5.207" y1="-1.27" x2="5.207" y2="11.176" width="0.127" layer="21"/>
-<wire x1="5.207" y1="11.176" x2="4.318" y2="11.176" width="0.127" layer="21"/>
-<wire x1="4.318" y1="11.176" x2="4.318" y2="12.7" width="0.127" layer="21"/>
-<wire x1="4.318" y1="12.7" x2="5.207" y2="12.7" width="0.127" layer="21"/>
-<wire x1="5.207" y1="12.7" x2="5.207" y2="14.605" width="0.127" layer="21"/>
-<wire x1="-5.207" y1="-1.27" x2="-5.207" y2="11.176" width="0.127" layer="21"/>
-<wire x1="-5.207" y1="11.176" x2="-4.318" y2="11.176" width="0.127" layer="21"/>
-<wire x1="-4.318" y1="11.176" x2="-4.318" y2="12.7" width="0.127" layer="21"/>
-<wire x1="-4.318" y1="12.7" x2="-5.207" y2="12.7" width="0.127" layer="21"/>
-<wire x1="-5.207" y1="12.7" x2="-5.207" y2="14.605" width="0.127" layer="21"/>
-<wire x1="-4.572" y1="-0.635" x2="4.572" y2="-0.635" width="0.0508" layer="21"/>
-<wire x1="4.572" y1="7.62" x2="4.572" y2="-0.635" width="0.0508" layer="21"/>
-<wire x1="4.572" y1="7.62" x2="-4.572" y2="7.62" width="0.0508" layer="21"/>
-<wire x1="-4.572" y1="-0.635" x2="-4.572" y2="7.62" width="0.0508" layer="21"/>
-<circle x="0" y="11.176" radius="1.8034" width="0.127" layer="21"/>
-<circle x="0" y="11.176" radius="4.191" width="0" layer="42"/>
-<circle x="0" y="11.176" radius="4.191" width="0" layer="43"/>
-<pad name="1" x="-2.54" y="-6.35" drill="1.1176" shape="long" rot="R90"/>
-<pad name="2" x="0" y="-6.35" drill="1.1176" shape="long" rot="R90"/>
-<pad name="3" x="2.54" y="-6.35" drill="1.1176" shape="long" rot="R90"/>
-<text x="-3.81" y="5.207" size="1.778" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.937" y="2.54" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-4.445" y="7.874" size="0.9906" layer="21" ratio="12">A17,5mm</text>
-<text x="-3.175" y="0" size="1.27" layer="51" ratio="10">1</text>
-<text x="-0.635" y="0" size="1.27" layer="51" ratio="10">2</text>
-<text x="1.905" y="0" size="1.27" layer="51" ratio="10">3</text>
-<rectangle x1="2.159" y1="-4.699" x2="2.921" y2="-4.064" layer="21"/>
-<rectangle x1="-0.381" y1="-4.699" x2="0.381" y2="-4.064" layer="21"/>
-<rectangle x1="-2.921" y1="-4.699" x2="-2.159" y2="-4.064" layer="21"/>
-<rectangle x1="-3.175" y1="-4.064" x2="-1.905" y2="-1.27" layer="21"/>
-<rectangle x1="-0.635" y1="-4.064" x2="0.635" y2="-1.27" layer="21"/>
-<rectangle x1="1.905" y1="-4.064" x2="3.175" y2="-1.27" layer="21"/>
-<rectangle x1="-2.921" y1="-6.604" x2="-2.159" y2="-4.699" layer="51"/>
-<rectangle x1="-0.381" y1="-6.604" x2="0.381" y2="-4.699" layer="51"/>
-<rectangle x1="2.159" y1="-6.604" x2="2.921" y2="-4.699" layer="51"/>
-<hole x="0" y="11.176" drill="3.302"/>
-</package>
-</packages>
-<symbols>
-<symbol name="LM1085IT">
-<wire x1="0" y1="15.24" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="12.7" y2="0" width="0.254" layer="94"/>
-<wire x1="12.7" y1="0" x2="12.7" y2="15.24" width="0.254" layer="94"/>
-<wire x1="12.7" y1="15.24" x2="0" y2="15.24" width="0.254" layer="94"/>
-<pin name="GND/ADJ" x="-5.08" y="2.54" length="middle"/>
-<pin name="INPUT" x="-5.08" y="12.7" length="middle"/>
-<pin name="OUTPUT" x="17.78" y="7.62" length="middle" rot="R180"/>
-<text x="0" y="17.78" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="-2.54" size="1.778" layer="95">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="LM1085IT" prefix="VR" uservalue="yes">
-<description>LM1085IT 3-A Low Dropout Voltage Regulator.
-Available in 3.3V, 5V, and 12-V Adjustable versions.</description>
-<gates>
-<gate name="G$1" symbol="LM1085IT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TO220">
-<connects>
-<connect gate="G$1" pin="GND/ADJ" pad="1"/>
-<connect gate="G$1" pin="INPUT" pad="3"/>
-<connect gate="G$1" pin="OUTPUT" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="frames" urn="urn:adsk.eagle:library:229">
 <description>&lt;b&gt;Frames for Sheet and Layout&lt;/b&gt;</description>
 <packages>
@@ -10957,6 +10878,23 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <wire x1="-17.8" y1="-6.4" x2="17.78" y2="-6.4" width="0.1" layer="21"/>
 <wire x1="17.78" y1="-6.4" x2="17.8" y2="-2.54" width="0.1" layer="21"/>
 </package>
+<package name="TO254P470X1016X2222-3P">
+<description>&lt;b&gt;TO254P470X1016X2222-3P&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="1" x="-5.08" y="-1.016" drill="1.27" diameter="1.905" shape="square"/>
+<pad name="2" x="-2.54" y="-1.016" drill="1.27" diameter="1.905"/>
+<pad name="3" x="0" y="-1.016" drill="1.27" diameter="1.905"/>
+<text x="-7.0358" y="2.5146" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="-8.4836" y="-5.6134" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-7.8232" y1="-2.8448" x2="2.7432" y2="-2.8448" width="0.1524" layer="21"/>
+<wire x1="2.7432" y1="-2.8448" x2="2.7432" y2="1.8288" width="0.1524" layer="21"/>
+<wire x1="2.7432" y1="1.8288" x2="-7.8232" y2="1.8288" width="0.1524" layer="21"/>
+<wire x1="-7.8232" y1="1.8288" x2="-7.8232" y2="-2.8448" width="0.1524" layer="21"/>
+<wire x1="-7.8232" y1="-2.8448" x2="2.7432" y2="-2.8448" width="0.1524" layer="51"/>
+<wire x1="2.7432" y1="-2.8448" x2="2.7432" y2="1.8288" width="0.1524" layer="51"/>
+<wire x1="2.7432" y1="1.8288" x2="-7.8232" y2="1.8288" width="0.1524" layer="51"/>
+<wire x1="-7.8232" y1="1.8288" x2="-7.8232" y2="-2.8448" width="0.1524" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="03540001ZXGY">
@@ -10968,6 +10906,17 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <text x="16.51" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
 <pin name="1" x="0" y="0" length="middle"/>
 <pin name="2" x="0" y="-2.54" length="middle"/>
+</symbol>
+<symbol name="LM1085IT-5.0">
+<wire x1="5.08" y1="2.54" x2="22.86" y2="2.54" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-7.62" x2="22.86" y2="2.54" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<text x="24.13" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="24.13" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="ADJ/GND" x="0" y="0" length="middle"/>
+<pin name="VOUT" x="0" y="-2.54" length="middle"/>
+<pin name="VIN" x="0" y="-5.08" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -10993,6 +10942,34 @@ Source: &lt;a href="https://m.littelfuse.com/~/media/electronics/datasheets/fuse
 <attribute name="MANUFACTURER_PART_NUMBER" value="03540001ZXGY" constant="no"/>
 <attribute name="MOUSER_PART_NUMBER" value="576-03540001ZXGY" constant="no"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Littelfuse/03540001ZXGY?qs=2VFNtWizgieffhgauIF6XA%3D%3D" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LM1085IT-5.0" prefix="IC">
+<description>&lt;b&gt;IC, LDO VOLT REG, 5V, 1.5A&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="LM1085IT-5.0" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO254P470X1016X2222-3P">
+<connects>
+<connect gate="G$1" pin="ADJ/GND" pad="1"/>
+<connect gate="G$1" pin="VIN" pad="3"/>
+<connect gate="G$1" pin="VOUT" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ARROW_PART_NUMBER" value="LM1085IT-5.0" constant="no"/>
+<attribute name="ARROW_PRICE-STOCK" value="https://www.arrow.com/en/products/lm1085it-5.0/texas-instruments" constant="no"/>
+<attribute name="DESCRIPTION" value="IC, LDO VOLT REG, 5V, 1.5A" constant="no"/>
+<attribute name="HEIGHT" value="mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Texas Instruments" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="LM1085IT-5.0" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="926-LM1085IT-50" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LM1085IT-50?qs=X1J7HmVL2ZGujKIFphWZug%3D%3D" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -11024,7 +11001,6 @@ Source: &lt;a href="https://m.littelfuse.com/~/media/electronics/datasheets/fuse
 <part name="JP30" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:6240710/1"/>
 <part name="JP10" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:6240710/1"/>
 <part name="JP15" library="adafruit" deviceset="PINHD-2X4" device=""/>
-<part name="VR1" library="mylibrary" deviceset="LM1085IT" device=""/>
 <part name="JP16" library="adafruit" deviceset="PINHD-2X4" device=""/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_C_L" device=""/>
 <part name="JP17" library="adafruit" deviceset="PINHD-2X4" device=""/>
@@ -11051,6 +11027,7 @@ Source: &lt;a href="https://m.littelfuse.com/~/media/electronics/datasheets/fuse
 <part name="C4" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1"/>
 <part name="J2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="POWER_JACK" device="" package3d_urn="urn:adsk.eagle:package:38231/1"/>
 <part name="U1" library="SamacSys_Parts" deviceset="03540001ZXGY" device=""/>
+<part name="IC2" library="SamacSys_Parts" deviceset="LM1085IT-5.0" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11102,10 +11079,6 @@ Allows connection for troubleshooting.
 <instance part="JP15" gate="A" x="116.84" y="2.54" smashed="yes">
 <attribute name="NAME" x="110.49" y="10.795" size="1.778" layer="95"/>
 <attribute name="VALUE" x="110.49" y="-5.08" size="1.778" layer="96"/>
-</instance>
-<instance part="VR1" gate="G$1" x="299.72" y="101.6" smashed="yes">
-<attribute name="NAME" x="299.72" y="119.38" size="1.778" layer="95"/>
-<attribute name="VALUE" x="302.26" y="99.06" size="1.778" layer="95"/>
 </instance>
 <instance part="JP16" gate="A" x="304.8" y="264.16" smashed="yes">
 <attribute name="NAME" x="298.45" y="272.415" size="1.778" layer="95"/>
@@ -11213,6 +11186,10 @@ Allows connection for troubleshooting.
 <attribute name="NAME" x="328.93" y="152.4" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="328.93" y="149.86" size="1.778" layer="96" align="center-left"/>
 </instance>
+<instance part="IC2" gate="G$1" x="294.64" y="88.9" smashed="yes">
+<attribute name="NAME" x="318.77" y="96.52" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="318.77" y="93.98" size="1.778" layer="96" align="center-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -11252,11 +11229,6 @@ Allows connection for troubleshooting.
 <wire x1="132.08" y1="7.62" x2="137.16" y2="7.62" width="0.1524" layer="91"/>
 <junction x="132.08" y="7.62"/>
 <label x="137.16" y="7.62" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="VR1" gate="G$1" pin="GND/ADJ"/>
-<wire x1="294.64" y1="104.14" x2="289.56" y2="104.14" width="0.1524" layer="91"/>
-<label x="289.56" y="104.14" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP16" gate="A" pin="2"/>
@@ -11375,6 +11347,12 @@ Allows connection for troubleshooting.
 <junction x="294.64" y="139.7"/>
 <wire x1="294.64" y1="134.62" x2="297.18" y2="134.62" width="0.1524" layer="91"/>
 <label x="297.18" y="134.62" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="G$1" pin="ADJ/GND"/>
+<wire x1="294.64" y1="88.9" x2="294.64" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="93.98" x2="284.48" y2="93.98" width="0.1524" layer="91"/>
+<label x="284.48" y="93.98" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SPEAKER" class="3">
@@ -11563,18 +11541,16 @@ Allows connection for troubleshooting.
 <pinref part="R4" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="JP18" gate="A" pin="3"/>
-<wire x1="284.48" y1="48.26" x2="279.4" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="279.4" y1="48.26" x2="279.4" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="279.4" y1="45.72" x2="274.32" y2="45.72" width="0.1524" layer="91"/>
-<label x="274.32" y="45.72" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="B2" gate="G$1" pin="D8"/>
 <wire x1="116.84" y1="220.98" x2="134.62" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="220.98" x2="134.62" y2="231.14" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="231.14" x2="147.32" y2="231.14" width="0.1524" layer="91"/>
 <label x="147.32" y="231.14" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP18" gate="A" pin="1"/>
+<wire x1="284.48" y1="50.8" x2="274.32" y2="50.8" width="0.1524" layer="91"/>
+<label x="274.32" y="50.8" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SDA" class="1">
@@ -11643,15 +11619,21 @@ Allows connection for troubleshooting.
 </segment>
 <segment>
 <pinref part="JP18" gate="A" pin="2"/>
-<wire x1="292.1" y1="50.8" x2="302.26" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="50.8" x2="297.18" y2="50.8" width="0.1524" layer="91"/>
 <label x="302.26" y="50.8" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="JP18" gate="A" pin="4"/>
-<wire x1="292.1" y1="48.26" x2="299.72" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="299.72" y1="48.26" x2="299.72" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="299.72" y1="45.72" x2="304.8" y2="45.72" width="0.1524" layer="91"/>
-<label x="304.8" y="45.72" size="1.778" layer="95" xref="yes"/>
+<wire x1="297.18" y1="50.8" x2="302.26" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="48.26" x2="297.18" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="48.26" x2="297.18" y2="50.8" width="0.1524" layer="91"/>
+<junction x="297.18" y="50.8"/>
+<pinref part="JP18" gate="A" pin="6"/>
+<wire x1="292.1" y1="45.72" x2="297.18" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="45.72" x2="297.18" y2="48.26" width="0.1524" layer="91"/>
+<junction x="297.18" y="48.26"/>
+<pinref part="JP18" gate="A" pin="8"/>
+<wire x1="292.1" y1="43.18" x2="297.18" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="43.18" x2="297.18" y2="45.72" width="0.1524" layer="91"/>
+<junction x="297.18" y="45.72"/>
 </segment>
 <segment>
 <pinref part="B2" gate="G$1" pin="5V"/>
@@ -11693,11 +11675,6 @@ Allows connection for troubleshooting.
 </net>
 <net name="+12V" class="2">
 <segment>
-<pinref part="VR1" gate="G$1" pin="INPUT"/>
-<wire x1="294.64" y1="114.3" x2="289.56" y2="114.3" width="0.1524" layer="91"/>
-<label x="289.56" y="114.3" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="B2" gate="G$1" pin="VIN"/>
 <wire x1="91.44" y1="218.44" x2="76.2" y2="218.44" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="218.44" x2="76.2" y2="215.9" width="0.1524" layer="91"/>
@@ -11715,13 +11692,14 @@ Allows connection for troubleshooting.
 <wire x1="312.42" y1="137.16" x2="327.66" y2="137.16" width="0.1524" layer="91"/>
 <label x="327.66" y="137.16" size="1.778" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="IC2" gate="G$1" pin="VIN"/>
+<wire x1="294.64" y1="83.82" x2="294.64" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="78.74" x2="284.48" y2="78.74" width="0.1524" layer="91"/>
+<label x="284.48" y="78.74" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="+5V_SERVO" class="2">
-<segment>
-<pinref part="VR1" gate="G$1" pin="OUTPUT"/>
-<wire x1="317.5" y1="109.22" x2="327.66" y2="109.22" width="0.1524" layer="91"/>
-<label x="327.66" y="109.22" size="1.778" layer="95" xref="yes"/>
-</segment>
 <segment>
 <pinref part="JP10" gate="A" pin="2"/>
 <label x="231.14" y="167.64" size="1.778" layer="95" rot="R180" xref="yes"/>
@@ -11759,6 +11737,11 @@ Allows connection for troubleshooting.
 <wire x1="251.46" y1="96.52" x2="251.46" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="251.46" y1="93.98" x2="238.76" y2="93.98" width="0.1524" layer="91"/>
 <junction x="238.76" y="93.98"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="G$1" pin="VOUT"/>
+<wire x1="294.64" y1="86.36" x2="284.48" y2="86.36" width="0.1524" layer="91"/>
+<label x="284.48" y="86.36" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$5" class="3">
