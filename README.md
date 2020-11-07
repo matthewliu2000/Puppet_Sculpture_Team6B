@@ -10,3 +10,6 @@ github repository for Team 6B ECE3872 Sculpture Project
 1. HW & SW Component Level Tests: in test_code Folder
 2. Draft Simulation Code: ArduinoSimulationCode.ino
 3. Final Simulation Code: ArduinoSimulationCodeV2.ino
+
+# Final Demonstration: 
+https://youtu.be/2q0zukCzHsM
